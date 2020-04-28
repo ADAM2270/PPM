@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Cute+Font&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <script type="text/javascript" src="javascript.js"></script>
+	</head>
+	<body onload="load()">
+
+		<div class="topnav">
+            <a href="mainpage">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="signup">Sign Up</a>
+            <a href="slideshow.html">Product Images</a>
+            <div class="dropdown">
+				<button class="dropbtn">Help
+					
+				</button>
+				<div class="dropdown-content">
+					<a href="faq.html">FAQ</a>
+					<a class="active" href="findus.html">Find us</a>
+				</div>
+			</div>
+            <img class="logoimage" src="logo.png">
+        </div>
+		<div id="shop">
+			<a href="basket.php"><img class="shopimg" id="shopimages" src="images/basket.png"><a/>
+			<a href="loginForm.php"> <img class="shopimg" id="shopimages2" src="images/login.png"><a/>
+		</div>
+		<div id="content6">
+            <h1>Delivery</h1>
+            <p>Here at NTSU Goods, we offer you the chance to have your order delivered straight to your accomodation! Please ensure that you check that you are selecting the correct campus that you wish to deliver your goods to! </p><br>
+            <div class="row">
+            <div class="column" style="background-color:#aaa;">
+            <h2>City Campus</h2>
+            <img src="CityCampus.png" width="435" height="300">
+            <br>
+            <form action="delivery.html">
+            <form name="delivery" action="#">
+								<p><label for="accomdation">Accomodation? </label><select name="accomodation">
+									<option value="Byron">Byron</option>
+									<option value="Sandby">Sandby</option>
+									<option value="Hampden">Hampden</option>
+                                    <option value="Gill Street South">Gill Street South</option>
+                                    <option value="Gill Street North">Gill Street North</option>
+									</select></p>
+									
+            <br>
+            Flat: <br>
+                <input type="text" name="flat" value=""> 
+                <br>
+            Room:<br>
+                <input type="text" name="room" value="">
+                
+                <button onclick="validateDelivery();" type="submit" value="Submit">Submit</button>
+                </form>
+            </div>
+            <div class="column" style="background-color:#bbb;">
+            <h2>Clifton Campus</h2>
+            <img src="Clifton.png" width="435" height="300">
+             <br>
+            <form>
+            <p><label for="accomodation">Accomodation? </label><select name="accomodation">
+									<option value="New Hall">New Hall</option>
+                                    <option value="Pevrell">Peverell</option>
+									</select></p>
+             <br>
+              Flat: <br>
+                <input type="text" name="flat" value=""> 
+                <br>
+             Room:<br>
+                <input type="text" name="room" value="">
+                
+                <button onclick="validateDelivery();" type="submit" value="Submit">Submit</button>
+                </form>
+            </div>
+            <div class="column" style="background-color:#ccc;">  
+            <h2>Brackenhurst Campus</h2>
+            <img src="Brackenhurst.png" width="435" height="300">
+            <br>
+            <p><label for="accomodation">Accomodation? </label><select name="accomodation">
+									<option value="Brackenhurst Residence">Brackenhurst Residence</option>
+                                    <option value="Southill Residence">Southill Residence</option>
+									</select></p>
+            <br>
+            Flat: <br>
+             <input type="text" name="flat" value="">
+            <br>
+            Room:<br>
+                <input type="text" name="">
+                
+             <button onclick="validateDelivery();" type="submit" value="Submit">Submit</button>
+            
+                </div>
+            </div>
+            
+            <div class="row">
+            <div class="column" style="background-color:#aaa;">
+                <h2>About City Campus</h2>
+                <p>The City Campus at NTU offers a range of different activities such as the Boots Library or the Student Union which is located next to our shop!  </p><br>
+                <img src="city.jpg" width="435" height="300">
+                </div>
+                <div class="column" style="background-color:#bbb;">
+                <h2>About Clifton Campus</h2>
+                <p>At Clifton, there's The Point which is located opposite the Shop on Campus. There's also the Pavillion on site, and the library which is open 24/7 during term time </p><br>
+                <img src="Clifton.jpg" width="435" height="300">                                         
+                </div>
+                <div class="column" style="background-color:#ccc;">
+                <h2>About Brackenhurst Campus</h2>
+                <p>At Brackenhurst, you can view our animal vetinary centre, as well as pop into our library to study. Pop into our store to get those essentials that you need at Brackenhurst </p><br>
+                <img src="brackenhurst.jpg" width="435" height="300">
+    </div>
+</div>
+            
+            
+            
+            
+        
+		</div>
+		<div id="footer">
+	<div id="contact">
+                <h1>Contact Us</h1><br>
+                <p><b>Phone: 0115 848 6226</b></p><br>
+                <p>Monday: 8am – 8pm<br>
+                    Tuesday: 8am – 8pm<br>
+                    Wednesday: 8am – 8pm<br>
+                    Thursday: 8am – 8pm<br>
+                    Friday: 8am – 8pm<br>
+                    Saturday: 9am – 6pm<br>
+                    Sunday: 10am – 5pm</p><br>
+                <p><b>Email: N0786258@ac.uk</b></p><br>
+            </div>
+            <div id="info">
+                <h1>Information</h1><br><br>
+                <p><b>VAT number: 226 6599 33</b></p><br>
+                <p><b> Clifton Ln, Campus, Clifton, Nottingham NG11 8NS</b></p>
+            </div>
+        </div>
+	</body>
+</html>
